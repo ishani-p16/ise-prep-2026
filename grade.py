@@ -1,18 +1,16 @@
-score=int(input("Enter a score(0-100):"))
-if score>100:
-    print("NOT POSSIBLE")
-elif score>=97:
-    print("A+ GRADE")
-elif score>=90:
-    print("A GRADE")
-elif score>=80:
-    print("B GRADE")
-elif score>=70:
-    print("C GRADE")
-elif score >=60:
-    print("D GRADE")
-elif 0<=score<60:
-    print("FAIL")
-else:
-    print("NOT POSSIBLE")
+def grades(score):
+   if score>=97:
+      return 'A+'
+   elif score>=90:
+      return 'A'
+   elif score>=80:
+      return 'B'
+   elif score>=70:
+      return 'C'
+   elif score >=60:
+      return 'D'
+   elif 0<=score<60:
+      return 'F'
 
+Score=int(input("Enter a score(0-100):"))
+print (grades(Score))
