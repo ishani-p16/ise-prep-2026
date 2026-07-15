@@ -1,0 +1,6 @@
+name=input('Enter your full name:')
+print('Uppercase:',name.upper())
+print('First letter:',name[0])
+print('Number of letters:',len(name))
+print('Last letter:',name[-1])
+print('Has a space?','' in name)
